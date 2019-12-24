@@ -1,0 +1,14 @@
+*Define the action name of diagram
+action a b tau
+
+*Define the knowledge of diagram
+agent C0 = a.C2 + b'.C1
+agent C1 = a.C3
+agent C2 = b'.C3
+agent C3 = tau.C0
+
+*Define the target agent to be simulated
+target C0
+
+*End of command list
+quit

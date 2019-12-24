@@ -1,0 +1,15 @@
+*Define the action name of diagram
+action a b c d
+
+*Define the knowledge of diagram
+agent Cell = a.b'.Cell
+agent C0 = Cell[c/b]
+agent C1 = Cell[c/a,d/b]
+agent C2 = Cell[d/a]
+agent Buff3 = (C0|C1|C2)/{c,d}
+
+*Define the target agent to be simulated
+target Buff3
+
+*End of command list
+quit

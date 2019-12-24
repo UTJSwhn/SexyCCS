@@ -1,0 +1,14 @@
+*Define the action name of diagram
+action a b c d
+
+*Define the knowledge of diagram
+agent A0 = a.A1
+agent A1 = b.A2 + c.A3
+agent A2 = 0
+agent A3 = d.A0
+
+*Define the target agent to be simulated
+target A0
+
+*End of command list
+quit

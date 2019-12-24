@@ -1,0 +1,18 @@
+*Define the action name of diagram
+action inc dec z d zero z1 d1 i1 
+
+*Define the knowledge of diagram
+agent C = inc.CC + dec.D
+agent D = d'.C + z'.B
+agent B = inc.CB + zero.B
+agent C1 = C[z1/z,d1/d]
+agent C2 = C[z1/zero,d1/dec,i1/inc]
+agent B1 = B[z1/zero,d1/dec,i1/inc]
+agent CC = (C1|C2)/{z1,d1,i1}
+agent CB = (C1|B1)/{z1,d1,i1}
+
+*Define the target agent to be simulated
+target B
+
+*End of command list
+quit

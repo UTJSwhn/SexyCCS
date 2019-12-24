@@ -1,0 +1,13 @@
+*Define the action name of diagram
+action a b
+
+*Define the knowledge of diagram
+agent Spec = a.Spec'
+agent Spec' = b'.Spec + a.Spec''
+agent Spec'' = b'.Spec' + a.b'.Spec''
+
+*Define the target agent to be simulated
+target Spec
+
+*End of command list
+quit

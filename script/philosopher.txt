@@ -1,0 +1,14 @@
+*Define the action name of diagram
+action a b
+
+*Define the knowledge of diagram
+agent K = a'.a.K
+agent F = b'.b.F
+agent P1 = a.b.a'.b'.P1
+agent P2 = a.b.a'.b'.P2
+
+*Define the target agent to be simulated
+target (K|F|P1|P2)/{a,b}
+
+*End of command list
+quit
